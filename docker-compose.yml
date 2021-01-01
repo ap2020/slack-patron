@@ -45,8 +45,6 @@ services:
     command: --profile=1 --slowms=100 --bind_ip_all --replSet rs0
     volumes:
       - mongodata:/data/db
-    ports:
-      - "127.0.0.1:27017:27017"
     restart: always
 
 volumes:
