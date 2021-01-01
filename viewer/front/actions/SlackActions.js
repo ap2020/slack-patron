@@ -29,6 +29,7 @@ const fetchJSON = async (url, params) => {
   if (res.ok) {
     return await res.json();
   } else {
+    alert('リクエストに失敗しました。本当にap2020用アカウントでログインしましたか？ログアウトして再度お試しください。');
     throw Error('fetch failed');
   }
 };
